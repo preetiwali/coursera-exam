@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<title>Module 2</title>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		h1{
+			position: relative;
+			top:40px;
+		}
+		#container{
+			position: relative;
+			top:100px;
+			text-align: center;
+		}
+		.animals{
+			/*width:calc(33.3% - 50px);*/
+			height:auto;
+			padding:10px;
+			margin:10px;
+			border:1px solid #000;
+			background-color:#bbb;
+			position: relative;
+			padding-bottom:55px;
+			display: inline-block;
+		}
+		.animals .animal_name{
+			padding:10px;
+			background-color: red; 
+			color:#fff;
+			position: absolute;
+			top:0px;
+			right:0px;
+		} 
+		.animals > div{
+			position: relative;
+			top:40px;
+		}
+
+		/*@media (max-width: 700px){
+			.animals{
+				width:calc(50% - 50px);
+			}
+			#sushi{
+				width:calc(100% - 50px);
+			}
+		}
+		@media (max-width: 400px){
+			.animals{
+				width:calc(100% - 50px);
+			}
+		}*/
+	</style>
+</head>
+
+<body>
+	<h1 align="center">Our Menu</h1>
+	<div id="container">
+		<div id="chicken" class="animals col-lg-4 col-md-6">
+			<span class="animal_name">Chicken</span>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+		</div>
+		<div id="beef" class="animals col-lg-4 col-md-6">
+			<span class="animal_name">Beef</span>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+		</div>
+		<div id="sushi" class="animals col-lg-4 col-md-12">
+			<span class="animal_name">Sushi</span>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+		</div>
+	</div>
+</body>
+</html>
