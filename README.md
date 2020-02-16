@@ -1,2 +1,2 @@
 # coursera-exam
-Coursera exam repository
+Coursera exam repository test.
